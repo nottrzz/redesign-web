@@ -1,0 +1,35 @@
+{
+ "note": "Credits for the photographs in this folder: photos.mjs credits prints the footer block for the ones the pages use.",
+ "photos": [
+  {
+   "file": "photo-f193889106-1280.jpg",
+   "files": [
+    "photo-f193889106-500.jpg",
+    "photo-f193889106-960.jpg",
+    "photo-f193889106-1280.jpg"
+   ],
+   "id": "f193889106",
+   "alt": "Sabbir Ahmed Shahin Portrait Alternate",
+   "by": "Sabbir Ahmed Shahin",
+   "licence": "CC BY 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sabbir_Ahmed_Shahin_Portrait_Alternate.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f172388214-1280.jpg",
+   "files": [
+    "photo-f172388214-500.jpg",
+    "photo-f172388214-960.jpg",
+    "photo-f172388214-1280.jpg"
+   ],
+   "id": "f172388214",
+   "alt": "Anatolii Levitskyi (Dinexpod) portrait 2025",
+   "by": "Dinexpod",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Anatolii_Levitskyi_(Dinexpod)_portrait_2025.jpg",
+   "source": "Wikimedia Commons"
+  }
+ ]
+}

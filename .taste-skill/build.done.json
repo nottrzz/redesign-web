@@ -1,0 +1,11 @@
+{
+ "page": "index.html",
+ "url": null,
+ "root": null,
+ "kind": "service",
+ "category": "web development services for businesses",
+ "primary": "Prepare a project brief",
+ "rounds": 3,
+ "start": "2026-11-17T12:54:33.415Z",
+ "by": "gate.mjs --start"
+}

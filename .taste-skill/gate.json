@@ -1,0 +1,1707 @@
+{
+ "start": "2026-11-17T12:54:33.415Z",
+ "round": 3,
+ "idle": 0,
+ "errors": 0,
+ "status": "open",
+ "history": [
+  {
+   "at": "2026-11-17T12:58:07.412Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 46,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-17T13:05:10.807Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 39,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-17T13:13:47.444Z",
+   "mode": "manual",
+   "status": "open",
+   "fails": 37,
+   "round": 3,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "index.html",
+  "url": null,
+  "root": null,
+  "kind": "service",
+  "category": "web development services for businesses",
+  "primary": "Prepare a project brief",
+  "rounds": 3,
+  "start": "2026-11-17T12:54:33.415Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "3072086da58b0c3d:da39a3ee",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "3072086da58b0c3d",
+ "page": "index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "flush",
+    "where": "ol.steps.mo-pc__steps > li.step.mo-pc__step:nth-of-type(4) > h3 > span.workflow-step-index \"04\"",
+    "msg": "its last line sits 0px above the lower edge of section#process, where the ground changes to section#faq",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "flush"
+    ],
+    "wheres": [
+     "ol.steps.mo-pc__steps > li.step.mo-pc__step:nth-of-type(4) > h3 > span.workflow-step-index \"04\""
+    ]
+   },
+   {
+    "check": "spill",
+    "where": "section.mobile-app.section-shell > div.device-showcase > div.device-phone > div.phone-screen \"LOCAL BUSINESS ☰ Good service, made easi\"",
+    "msg": "runs 28px past the right edge of the panel it sits on (section.mobile-app.section-shell > div.device-showcase > div.responsive-browser > div.responsive-site)",
+    "fix": "keep the box inside the panel it starts on: shrink it, or grow the panel to hold it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "spill"
+    ],
+    "wheres": [
+     "section.mobile-app.section-shell > div.device-showcase > div.device-phone > div.phone-screen \"LOCAL BUSINESS ☰ Good service, made easi\""
+    ]
+   },
+   {
+    "check": "overlap-text",
+    "where": "main#content > section.mobile-app.section-shell \"WEBSITE PREVIEW LOCAL BUSINESS Services \"",
+    "msg": "lies over the text \"From the first brief to a site ready to \" (h2#workflow-title)",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "overlap-text"
+    ],
+    "wheres": [
+     "main#content > section.mobile-app.section-shell \"WEBSITE PREVIEW LOCAL BUSINESS Services \""
+    ]
+   },
+   {
+    "check": "overlap-text",
+    "where": "section#faq \"Frequently asked questions about web dev\"",
+    "msg": "lies over the text \"04 Website review and launch\" (li.step.mo-pc__step:nth-of-type(4) > h3)",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "overlap-text"
+    ],
+    "wheres": [
+     "section#faq \"Frequently asked questions about web dev\""
+    ]
+   },
+   {
+    "check": "no-visual",
+    "where": "section#services \"Web Development Packages, Clearly Scoped\"",
+    "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "no-visual"
+    ],
+    "wheres": [
+     "section#services \"Web Development Packages, Clearly Scoped\""
+    ]
+   },
+   {
+    "check": "no-visual",
+    "where": "main#content > section.benefits.section-shell \"What your business website can include\"",
+    "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "no-visual"
+    ],
+    "wheres": [
+     "main#content > section.benefits.section-shell \"What your business website can include\""
+    ]
+   },
+   {
+    "check": "text-only",
+    "where": "section#faq \"Frequently asked questions about web dev\"",
+    "msg": "the section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+    "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-only"
+    ],
+    "wheres": [
+     "section#faq \"Frequently asked questions about web dev\""
+    ]
+   },
+   {
+    "check": "text-only",
+    "where": "section#contact \"Free web development consultation for yo\"",
+    "msg": "the closing section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+    "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-only"
+    ],
+    "wheres": [
+     "section#contact \"Free web development consultation for yo\""
+    ]
+   },
+   {
+    "check": "nesting",
+    "where": "section.mobile-app.section-shell > div.device-showcase > div.responsive-browser > div.responsive-site \"A clearer place for your business.\"",
+    "msg": "3 boxes deep: div.device-showcase > div.responsive-browser > div.responsive-site (text in a box in a box)",
+    "fix": "two levels at most: a card holds a lit picture (no lines, dots or plain box behind the UI), the picture holds the UI",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "nesting"
+    ],
+    "wheres": [
+     "section.mobile-app.section-shell > div.device-showcase > div.responsive-browser > div.responsive-site \"A clearer place for your business.\""
+    ]
+   },
+   {
+    "check": "off-grid",
+    "where": "section#home > div.hero-copy > p.eyebrow \"A web studio in Lombok · serving busines\"",
+    "msg": "left edge at 112px, 21px off the page margin at 91px (32 elements, like span.eyebrow-mark)",
+    "fix": "move it onto the page margin, or the column edge its section uses",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "off-grid"
+    ],
+    "wheres": [
+     "section#home > div.hero-copy > p.eyebrow \"A web studio in Lombok · serving busines\""
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "nav#site-nav > a.button.button-dark \"https://wa.me/6289518225535?text=Hello%2\"",
+    "msg": "a WhatsApp link calls a number in a real dialable format: \"https://wa.me/6289518225535?text=Hello%2\"; a visitor can dial it and reach a stranger (and 5 more like it: main#content > section.mobile-app.section-shell > div.mobile-app-copy > a.button.button-dark, div.floating-actions > a.floating-whatsapp, footer.site-footer.home-footer > div.home-footer-inner > div.footer-column.footer-contact > a:nth-of-type(2), ...)",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "nav#site-nav > a.button.button-dark \"https://wa.me/6289518225535?text=Hello%2\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "section#services > div.service-grid:nth-of-type(2) > article.service-card.service-card-priced:nth-of-type(1) > a.card-link \"Explore landing pages\"",
+    "msg": "Tab stop 12, a \"Explore landing pages\": the focus lands on something you cannot see",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "section#services > div.service-grid:nth-of-type(2) > article.service-card.service-card-priced:nth-of-type(1) > a.card-link \"Explore landing pages\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "main#content > section.industry.section-shell:nth-of-type(5) > div.industry-copy:nth-of-type(1) > a.text-link \"Explore business solutions\"",
+    "msg": "Tab stop 18, a \"Explore business solutions\": the focus lands on something you cannot see",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "main#content > section.industry.section-shell:nth-of-type(5) > div.industry-copy:nth-of-type(1) > a.text-link \"Explore business solutions\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "main#content > section.industry.section-shell:nth-of-type(5) > div.area-links:nth-of-type(3) > a:nth-of-type(1) \"Online stores\"",
+    "msg": "Tab stop 19, a \"Online stores\": the focus lands on something you cannot see",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "main#content > section.industry.section-shell:nth-of-type(5) > div.area-links:nth-of-type(3) > a:nth-of-type(1) \"Online stores\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "main#content > section.industry.section-shell:nth-of-type(5) > div.area-links:nth-of-type(3) > a:nth-of-type(2) \"Travel & hospitality\"",
+    "msg": "Tab stop 20, a \"Travel & hospitality\": the focus lands on something you cannot see",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "main#content > section.industry.section-shell:nth-of-type(5) > div.area-links:nth-of-type(3) > a:nth-of-type(2) \"Travel & hospitality\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#services \"Web Development Packages, Clearly Scoped\"",
+    "msg": "the section is 1377px tall (1.5 screens), 423px short of two screens (1800px): every section after the hero is one screen or two, 2px either way (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "section#services \"Web Development Packages, Clearly Scoped\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "footer.site-footer.home-footer \"A web studio based in Lombok, serving bu\"",
+    "msg": "the section is 488px tall (0.5 screens), 412px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "footer.site-footer.home-footer \"A web studio based in Lombok, serving bu\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "main#content > section.mobile-app.section-shell \"WEBSITE PREVIEWLOCAL BUSINESSServices Ab\"",
+    "msg": "the section is 614px tall (0.7 screens), 286px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 5 more like it: \"Frequently asked questio\", \"What your business websi\", \"Websites for small busin\") (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "main#content > section.mobile-app.section-shell \"WEBSITE PREVIEWLOCAL BUSINESSServices Ab\"",
+     "main#content > section.benefits.section-shell \"What your business website can includeA \"",
+     "main#content > section.industry.section-shell \"Websites for small businesses, travel, s\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#portfolio \"Website & Web Application Concepts Three\"",
+    "msg": "the section starts at 2277px, 423px above the screen grid (3 x 900px): sections start on whole screens (SR-2)",
+    "fix": "make every section above it exactly one or two screens tall, so this one starts on a whole screen",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "section#portfolio \"Website & Web Application Concepts Three\""
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "main#content > section.benefits.section-shell > div.benefit-grid \"01Website design for every screenA visua\"",
+    "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+    "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "main#content > section.benefits.section-shell > div.benefit-grid \"01Website design for every screenA visua\""
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "main#content > section.industry.section-shell > div.area-links:nth-of-type(3) \"Explore by needOnline stores ↗Travel & h\"",
+    "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+    "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "main#content > section.industry.section-shell > div.area-links:nth-of-type(3) \"Explore by needOnline stores ↗Travel & h\""
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "main#content > section.industry.section-shell > div.area-links.area-links-regions \"Where we workLombok & West Nusa Tenggara\"",
+    "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+    "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "main#content > section.industry.section-shell > div.area-links.area-links-regions \"Where we workLombok & West Nusa Tenggara\""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "section#services \"Web Development Packages, Clearly Scoped\"",
+    "msg": "the screen at scroll 1800px (stride 2) shows 395px of section 2 and the content of 2 sections, over 24px each beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "section#services \"Web Development Packages, Clearly Scoped\""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "section#portfolio \"Website & Web Application Concepts Three\"",
+    "msg": "the screen at scroll 2700px (stride 3) shows 384px of section 3 and the content of 2 sections, over 24px each beside section 4: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "section#portfolio \"Website & Web Application Concepts Three\""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "section#contact \"Free web development consultation for yo\"",
+    "msg": "the screen at scroll 8521px (the top of section 10) shows 330px of section 9 and the content of 2 sections, over 24px each beside section 10: a screen shows one section (another may peek 8px, 24px WARN) (and 9 more like it: scroll 3600px, scroll 3889px, scroll 6300px) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "section#contact \"Free web development consultation for yo\""
+    ]
+   },
+   {
+    "check": "one-heading",
+    "where": "footer.site-footer.home-footer > div.home-footer-inner > div.footer-column.footer-contact > h2 \"Contact\"",
+    "msg": "the section holds 2 h2 headings: one per section, first in its .wrap (SR-5)",
+    "fix": "give each section one h2, first in its .wrap, and the hero only its h1",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-heading"
+    ],
+    "wheres": [
+     "footer.site-footer.home-footer > div.home-footer-inner > div.footer-column.footer-contact > h2 \"Contact\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "section#process \"From the first brief to a site ready to \"",
+    "msg": "the content of section 7 runs 0px from the left and 0px from the right (read from its outermost blocks: no .wrap): the page's container starts at 92px; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+    "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "section#process \"From the first brief to a site ready to \""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "a.skip-link \"Skip to content\"",
+    "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "a.skip-link \"Skip to content\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "header.site-header \"Menu Services & pricing Business solutio\"",
+    "msg": "a <header> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "header.site-header \"Menu Services & pricing Business solutio\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "footer.site-footer.home-footer \"A web studio based in Lombok, serving bu\"",
+    "msg": "a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 10 more like it: \"A web studio in Lombok ·\", \"Web Development Packages\", \"Website & Web Applicatio\") (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "footer.site-footer.home-footer \"A web studio based in Lombok, serving bu\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "footer.site-footer.home-footer > div.home-footer-inner > div.footer-column.footer-contact > h2 \"Contact\"",
+    "msg": "the h2 starts 916px right of the container's left: every h1 and h2 starts on it, 2px either way (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "footer.site-footer.home-footer > div.home-footer-inner > div.footer-column.footer-contact > h2 \"Contact\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "main#content > section.mobile-app.section-shell > div.mobile-app-copy > h2 \"One connected experience across web and \"",
+    "msg": "the h2 starts 700px right of the container's left: every h1 and h2 starts on it, 2px either way (and 4 more like it: x 702, x 670, \"Explore\") (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "main#content > section.mobile-app.section-shell > div.mobile-app-copy > h2 \"One connected experience across web and \""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "section#home > figure.hero-visual > img.hero-main-photo \"Laptop displaying website code in a work\"",
+    "msg": "a <img> over half the container wide runs 692-1347px, not on the container's lines at 92-1348px (SR-6)",
+    "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "section#home > figure.hero-visual > img.hero-main-photo \"Laptop displaying website code in a work\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "section#faq > div.faq-list \"How long does website development take?A\"",
+    "msg": "a box over half the container wide runs 670-1348px, not on the container's lines at 92-1348px (and 1 more like it: \"Developers collaborating\") (SR-6)",
+    "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "section#faq > div.faq-list \"How long does website development take?A\""
+    ]
+   },
+   {
+    "check": "nav",
+    "where": "nav#site-nav > a:nth-of-type(1) \"Services & pricing\"",
+    "msg": "nav link wraps to a second line",
+    "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+    "widths": [
+     1152
+    ],
+    "from": "consistency",
+    "ids": [
+     "nav"
+    ],
+    "wheres": [
+     "nav#site-nav > a:nth-of-type(1) \"Services & pricing\""
+    ]
+   },
+   {
+    "check": "nav",
+    "where": "nav#site-nav > a:nth-of-type(2) \"Business solutions\"",
+    "msg": "nav link wraps to a second line",
+    "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+    "widths": [
+     1152
+    ],
+    "from": "consistency",
+    "ids": [
+     "nav"
+    ],
+    "wheres": [
+     "nav#site-nav > a:nth-of-type(2) \"Business solutions\""
+    ]
+   },
+   {
+    "check": "container",
+    "where": "page",
+    "msg": "no .wrap",
+    "fix": "put the content in one .wrap",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "container"
+    ],
+    "wheres": [
+     "page"
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "overlap-text",
+    "where": "ol.steps.mo-pc__steps > li.step.mo-pc__step:nth-of-type(1) > p > span.mo-pc__p-in \"Agree on your audience, key requirements\"",
+    "msg": "lies over the text \"01 Website brief and goals\" (li.step.mo-pc__step:nth-of-type(1) > h3) (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "h2#workflow-title \"From the first brief to a site ready to \"",
+    "msg": "cut 22px at the top by the overflow of section#process > div.workflow-grid.mo-pc__grid (inside a held section or scroll scene, whose motion --quick does not check) (and 2 more like it: \"Website goals\", \"Final checks\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "scroll-reveal",
+    "where": "main#content > section.industry.section-shell > div.industry-visual.industry-showcase",
+    "msg": "starts an animation (1.6 s) the moment it is scrolled into view (an IntersectionObserver) on img.industry-team-photo (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "scroll-reveal",
+    "where": "section#process \"From the first brief to a site ready to \"",
+    "msg": "starts \"border-left-color\" (0.3 s) the moment it is scrolled into view (an IntersectionObserver) on li.step.mo-pc__step:nth-of-type(1) (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "pinned",
+    "where": "section#process > div.workflow-grid.mo-pc__grid \"From the first brief to a site ready to \"",
+    "msg": "held on screen for 1 screen of scroll (position: sticky) while the page moves on (inside a dealt moment's section, [data-moment]: expected on every kind, two moments at most, house rule; its still is judged under reduced motion)",
+    "fix": "let the section scroll with the page",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "card-visual",
+    "where": "section#services > div.service-grid \"Landing page One campaign page for the o\"",
+    "msg": "6 cards hold only text: no picture, icon, UI fragment or effect in any of them",
+    "fix": "give the cards a visual: an inset panel with a UI fragment, a photograph or real icons",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#process \"From the first brief to a site ready to \"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-headings",
+    "where": "h2#workflow-title \"From the first brief to a site ready to \"",
+    "msg": "\"From the first brief to a site ready to launch.\" names no product, part, place or section (the one brand line a page may have)",
+    "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-headings",
+    "where": "section#services > div.service-grid > article.service-card.service-card-priced:nth-of-type(1) > h3 \"Landing page\"",
+    "msg": "the card title \"Landing page\" names no product, part, place or section (4 card titles like it) (and 3 more like it: \"Redesign & maintenance\", \"School information syste\", \"Accommodation profile & \")",
+    "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-buttons",
+    "where": "nav#site-nav > a.language-switch \"ID\"",
+    "msg": "\"ID\" does not start with a verb (book, buy, try, start, get, see...) (and 2 more like it: \"Prepare a project brief \", \"Prepare my consultation \")",
+    "fix": "label buttons with a verb and what the visitor gets (\"Book a room\", \"Start free trial\")",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-actions",
+    "where": "(the page)",
+    "msg": "the main action \"Prepare a project brief\" does not read word for word the same in the closing section",
+    "fix": "few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "off-grid",
+    "where": "ol.steps.mo-pc__steps > li.step.mo-pc__step:nth-of-type(1) > p > span.mo-pc__p-in \"Agree on your audience, key requirements\"",
+    "msg": "left edge at 76px, 15px off the page margin at 91px (32 elements); 1 more in this section off the grid too (span.mo-pc__p-in at 76px) (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "move it onto the page margin, or the column edge its section uses",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "off-grid",
+    "where": "h2#workflow-title \"From the first brief to a site ready to \"",
+    "msg": "the section's heading starts at 0px, 91px off the page margin (91px), and no other section starts there (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "move it onto the page margin, or the column edge its section uses",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "body-size",
+    "where": "section#faq > div.faq-side-note > p \"Have another feature or integration in m\"",
+    "msg": "16 of 23 paragraphs of running text are set under 16px (13, 15px)",
+    "fix": "set running text at 16px or more",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#content > section.mobile-app.section-shell / section#process",
+    "msg": "112px between these sections, -48% against the median 214px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#process / section#faq",
+    "msg": "112px between these sections, -48% against the median 214px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#contact / footer.site-footer.home-footer",
+    "msg": "uneven space at the edge of a band: 58px outside its edge, 124px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "hole",
+    "where": "section#services > div.service-grid > article.service-card:nth-of-type(6) \"Redesign & maintenance Refresh a website\"",
+    "msg": "an empty band 128px tall across the card (31% of its height), with content above and below it",
+    "fix": "close the empty space: move the content together, or give the space the visual it lacks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "main#content > section.industry.section-shell > div.industry-visual.industry-showcase > img.industry-team-photo \"web-team.jpg\"",
+    "msg": "3 photographs in more than one look: lightness from 0.29 to 0.91; the odd one out is web-team.jpg",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-credit",
+    "where": "(the page text)",
+    "msg": "1 library source (unsplash): the page credits unsplash; confirm each shows the client's own product, place or people",
+    "fix": "confirm the library photograph shows the client's own product, place or people; otherwise replace it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "link-styles",
+    "where": "section#contact > div.contact-copy > p.contact-email > a \"hello@lombokdevlab.com\"",
+    "msg": "text links in 4 looks: no line, bold (16, like \"Compare packages ↗\"); underline, bold (1, like \"hello@lombokdevlab.c\"); no line, regular (4, like \"hello@lombokdevlab.c\"); underline, regular (1, like \"Unsplash\")",
+    "fix": "give text links one look wherever they sit: one underline, one weight",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "main#content > section.industry.section-shell > div.industry-copy > h2 \"Websites for small businesses, travel, s\"",
+    "msg": "a section heading of 8 words on 4 lines at 56px: a paragraph set in display type",
+    "fix": "cut the heading to one short line (2 to 12 words) and move the rest into the text under it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "section#faq > div.faq-heading > h2 \"Frequently asked questions about web dev\"",
+    "msg": "a section heading of 6 words on 4 lines at 58px: a paragraph set in display type",
+    "fix": "cut the heading to one short line (2 to 12 words) and move the rest into the text under it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "h2#contact-title \"Free web development consultation for yo\"",
+    "msg": "a section heading of 7 words on 4 lines at 58px: a paragraph set in display type",
+    "fix": "cut the heading to one short line (2 to 12 words) and move the rest into the text under it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "one-screen",
+    "where": "main#content > section.mobile-app.section-shell \"A clearer place for your business.\"",
+    "msg": "1 section is shorter than the screen, so the next one's heading or picture shows with it: \"A clearer place for your business.\" is 614px of the 818px under the nav, and \"From the first brief to a site\" shows below it",
+    "fix": "give each section the screen (min-height: 100svh less the nav, its content centred), or join two short ones into one",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "share-meta",
+    "where": "head",
+    "msg": "the head lacks og:image, twitter:card, an icon: a shared link shows no picture or title of its own",
+    "fix": "copy the head block of starter.html: og tags, twitter:card, the icon and theme-color (references/system.md, Head)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "one-heading",
+    "where": "h2#workflow-title \"From the first brief to a site ready to \"",
+    "msg": "headings of two sections show whole on one screen at 7 of 171 scroll positions (4.1%; at scroll 4450, 4500, 4550, 4600px), here with \"One connected experience across \": at most 3% on a desktop (it is in a scroll scene: told as a WARN) (SR-5)",
+    "fix": "make the sections one screen tall so their headings sit a screen apart and two never share one",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "split-pair",
+    "where": "section#process > div.workflow-grid.mo-pc__grid \"From the first brief to a site ready to \"",
+    "msg": "the split's columns are off the page's one pair of lines: its right column starts at x 749, on none of the split lines 610 (k=5), 732 (k=6), 854 (k=7) (it is in a scroll scene: told as a WARN) (SR-8)",
+    "fix": "start every split's right column on one shared line (wrap.left + k x (width + 24) / 12, k 5, 6 or 7; 6 on a place page) and end the left one 24px before it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "header.site-header > div.header-inner > button.menu-toggle \"Menu\"",
+    "msg": "a 86x42px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "section#home > div.hero-copy > div.hero-actions > a.text-link \"Compare packages ↗\"",
+    "msg": "a 344x32px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "section#services > div.service-grid > article.service-card.service-card-priced:nth-of-type(1) > a.card-link \"Explore landing pages ↗\"",
+    "msg": "a 161x34px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "section#services > div.service-grid > article.service-card.service-card-priced:nth-of-type(2) > a.card-link \"Explore company websites ↗\"",
+    "msg": "a 192x34px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "section#services > div.service-grid > article.service-card:nth-of-type(5) > a.card-link \"Discuss app + website ↗\"",
+    "msg": "a 163x34px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "main#content > section.industry.section-shell > div.industry-copy > a.text-link \"Explore business solutions ↗\"",
+    "msg": "a 204x32px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "main#content > section.industry.section-shell > div.area-links:nth-of-type(3) > a:nth-of-type(1) \"Online stores ↗\"",
+    "msg": "a 100x21px tap target (and 3 more like it on this screen): under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "main#content > section.industry.section-shell > div.area-links.area-links-regions > a:nth-of-type(1) \"Lombok & West Nusa Tenggara ↗\"",
+    "msg": "a 211x21px tap target (and 2 more like it on this screen): under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "footer.site-footer.home-footer > div.footer-bottom > small.footer-location > a \"Unsplash\"",
+    "msg": "a 50x16px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "button-styles",
+    "where": "main#content > section.mobile-app.section-shell > div.mobile-app-copy > a.button.button-dark \"Discuss an app + website ↗\"",
+    "msg": "on the phone 2 buttons run the full width of their column, but  \"Discuss an app + website ↗\" is 259px of 344px: one action in two sizes",
+    "fix": "give every button the same width rule on the phone: all full width, or all at their own width",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#portfolio \"Website & Web Application Concepts\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "off-grid",
+    "where": "section#home > div.hero-copy > p.eyebrow > span.eyebrow-mark",
+    "msg": "left edge at 21px, 2px off the page margin at 23px (74 elements, like h1#hero-title)",
+    "fix": "move it onto the page margin, or the column edge its section uses",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-weight",
+    "where": "section#home > figure.hero-visual > img.hero-main-photo \"web-development.jpg\"",
+    "msg": "2 photographs are 3x or more wider than drawn on the phone, with no srcset: web-development.jpg is 1400px (170 KB) for a 344px frame; on a phone it arrives late and its frame shows only its ground until then",
+    "fix": "give each photograph srcset and sizes (a 800px and a 1600px file), or a smaller file: the frame never shows empty",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-numbered",
+    "msg": "8 step numbers",
+    "fix": "number only steps that happen in order (references/copy-tells.md)",
+    "widths": [],
+    "from": "copy",
+    "where": "(the copy)",
+    "exact": false
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 190,
+   "layout": 18
+  }
+ },
+ "open": [
+  {
+   "check": "flush",
+   "where": "ol.steps.mo-pc__steps > li.step.mo-pc__step:nth-of-type(4) > h3 > span.workflow-step-index \"04\"",
+   "msg": "its last line sits 0px above the lower edge of section#process, where the ground changes to section#faq",
+   "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "flush"
+   ],
+   "wheres": [
+    "ol.steps.mo-pc__steps > li.step.mo-pc__step:nth-of-type(4) > h3 > span.workflow-step-index \"04\""
+   ]
+  },
+  {
+   "check": "spill",
+   "where": "section.mobile-app.section-shell > div.device-showcase > div.device-phone > div.phone-screen \"LOCAL BUSINESS ☰ Good service, made easi\"",
+   "msg": "runs 28px past the right edge of the panel it sits on (section.mobile-app.section-shell > div.device-showcase > div.responsive-browser > div.responsive-site)",
+   "fix": "keep the box inside the panel it starts on: shrink it, or grow the panel to hold it",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "spill"
+   ],
+   "wheres": [
+    "section.mobile-app.section-shell > div.device-showcase > div.device-phone > div.phone-screen \"LOCAL BUSINESS ☰ Good service, made easi\""
+   ]
+  },
+  {
+   "check": "overlap-text",
+   "where": "main#content > section.mobile-app.section-shell \"WEBSITE PREVIEW LOCAL BUSINESS Services \"",
+   "msg": "lies over the text \"From the first brief to a site ready to \" (h2#workflow-title)",
+   "fix": "move the box off the text (or the text off the box)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "overlap-text"
+   ],
+   "wheres": [
+    "main#content > section.mobile-app.section-shell \"WEBSITE PREVIEW LOCAL BUSINESS Services \""
+   ]
+  },
+  {
+   "check": "overlap-text",
+   "where": "section#faq \"Frequently asked questions about web dev\"",
+   "msg": "lies over the text \"04 Website review and launch\" (li.step.mo-pc__step:nth-of-type(4) > h3)",
+   "fix": "move the box off the text (or the text off the box)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "overlap-text"
+   ],
+   "wheres": [
+    "section#faq \"Frequently asked questions about web dev\""
+   ]
+  },
+  {
+   "check": "no-visual",
+   "where": "section#services \"Web Development Packages, Clearly Scoped\"",
+   "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+   "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "no-visual"
+   ],
+   "wheres": [
+    "section#services \"Web Development Packages, Clearly Scoped\""
+   ]
+  },
+  {
+   "check": "no-visual",
+   "where": "main#content > section.benefits.section-shell \"What your business website can include\"",
+   "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+   "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "no-visual"
+   ],
+   "wheres": [
+    "main#content > section.benefits.section-shell \"What your business website can include\""
+   ]
+  },
+  {
+   "check": "text-only",
+   "where": "section#faq \"Frequently asked questions about web dev\"",
+   "msg": "the section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+   "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-only"
+   ],
+   "wheres": [
+    "section#faq \"Frequently asked questions about web dev\""
+   ]
+  },
+  {
+   "check": "text-only",
+   "where": "section#contact \"Free web development consultation for yo\"",
+   "msg": "the closing section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+   "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-only"
+   ],
+   "wheres": [
+    "section#contact \"Free web development consultation for yo\""
+   ]
+  },
+  {
+   "check": "nesting",
+   "where": "section.mobile-app.section-shell > div.device-showcase > div.responsive-browser > div.responsive-site \"A clearer place for your business.\"",
+   "msg": "3 boxes deep: div.device-showcase > div.responsive-browser > div.responsive-site (text in a box in a box)",
+   "fix": "two levels at most: a card holds a lit picture (no lines, dots or plain box behind the UI), the picture holds the UI",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "nesting"
+   ],
+   "wheres": [
+    "section.mobile-app.section-shell > div.device-showcase > div.responsive-browser > div.responsive-site \"A clearer place for your business.\""
+   ]
+  },
+  {
+   "check": "off-grid",
+   "where": "section#home > div.hero-copy > p.eyebrow \"A web studio in Lombok · serving busines\"",
+   "msg": "left edge at 112px, 21px off the page margin at 91px (32 elements, like span.eyebrow-mark)",
+   "fix": "move it onto the page margin, or the column edge its section uses",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "off-grid"
+   ],
+   "wheres": [
+    "section#home > div.hero-copy > p.eyebrow \"A web studio in Lombok · serving busines\""
+   ]
+  },
+  {
+   "check": "phone-number",
+   "where": "nav#site-nav > a.button.button-dark \"https://wa.me/6289518225535?text=Hello%2\"",
+   "msg": "a WhatsApp link calls a number in a real dialable format: \"https://wa.me/6289518225535?text=Hello%2\"; a visitor can dial it and reach a stranger (and 5 more like it: main#content > section.mobile-app.section-shell > div.mobile-app-copy > a.button.button-dark, div.floating-actions > a.floating-whatsapp, footer.site-footer.home-footer > div.home-footer-inner > div.footer-column.footer-contact > a:nth-of-type(2), ...)",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "nav#site-nav > a.button.button-dark \"https://wa.me/6289518225535?text=Hello%2\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "section#services > div.service-grid:nth-of-type(2) > article.service-card.service-card-priced:nth-of-type(1) > a.card-link \"Explore landing pages\"",
+   "msg": "Tab stop 12, a \"Explore landing pages\": the focus lands on something you cannot see",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "section#services > div.service-grid:nth-of-type(2) > article.service-card.service-card-priced:nth-of-type(1) > a.card-link \"Explore landing pages\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "main#content > section.industry.section-shell:nth-of-type(5) > div.industry-copy:nth-of-type(1) > a.text-link \"Explore business solutions\"",
+   "msg": "Tab stop 18, a \"Explore business solutions\": the focus lands on something you cannot see",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "main#content > section.industry.section-shell:nth-of-type(5) > div.industry-copy:nth-of-type(1) > a.text-link \"Explore business solutions\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "main#content > section.industry.section-shell:nth-of-type(5) > div.area-links:nth-of-type(3) > a:nth-of-type(1) \"Online stores\"",
+   "msg": "Tab stop 19, a \"Online stores\": the focus lands on something you cannot see",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "main#content > section.industry.section-shell:nth-of-type(5) > div.area-links:nth-of-type(3) > a:nth-of-type(1) \"Online stores\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "main#content > section.industry.section-shell:nth-of-type(5) > div.area-links:nth-of-type(3) > a:nth-of-type(2) \"Travel & hospitality\"",
+   "msg": "Tab stop 20, a \"Travel & hospitality\": the focus lands on something you cannot see",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "main#content > section.industry.section-shell:nth-of-type(5) > div.area-links:nth-of-type(3) > a:nth-of-type(2) \"Travel & hospitality\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "section#services \"Web Development Packages, Clearly Scoped\"",
+   "msg": "the section is 1377px tall (1.5 screens), 423px short of two screens (1800px): every section after the hero is one screen or two, 2px either way (SR-2)",
+   "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "section#services \"Web Development Packages, Clearly Scoped\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "footer.site-footer.home-footer \"A web studio based in Lombok, serving bu\"",
+   "msg": "the section is 488px tall (0.5 screens), 412px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+   "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "footer.site-footer.home-footer \"A web studio based in Lombok, serving bu\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "main#content > section.mobile-app.section-shell \"WEBSITE PREVIEWLOCAL BUSINESSServices Ab\"",
+   "msg": "the section is 614px tall (0.7 screens), 286px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 5 more like it: \"Frequently asked questio\", \"What your business websi\", \"Websites for small busin\") (SR-2)",
+   "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "main#content > section.mobile-app.section-shell \"WEBSITE PREVIEWLOCAL BUSINESSServices Ab\"",
+    "main#content > section.benefits.section-shell \"What your business website can includeA \"",
+    "main#content > section.industry.section-shell \"Websites for small businesses, travel, s\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "section#portfolio \"Website & Web Application Concepts Three\"",
+   "msg": "the section starts at 2277px, 423px above the screen grid (3 x 900px): sections start on whole screens (SR-2)",
+   "fix": "make every section above it exactly one or two screens tall, so this one starts on a whole screen",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "section#portfolio \"Website & Web Application Concepts Three\""
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "main#content > section.benefits.section-shell > div.benefit-grid \"01Website design for every screenA visua\"",
+   "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+   "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "main#content > section.benefits.section-shell > div.benefit-grid \"01Website design for every screenA visua\""
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "main#content > section.industry.section-shell > div.area-links:nth-of-type(3) \"Explore by needOnline stores ↗Travel & h\"",
+   "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+   "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "main#content > section.industry.section-shell > div.area-links:nth-of-type(3) \"Explore by needOnline stores ↗Travel & h\""
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "main#content > section.industry.section-shell > div.area-links.area-links-regions \"Where we workLombok & West Nusa Tenggara\"",
+   "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+   "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "main#content > section.industry.section-shell > div.area-links.area-links-regions \"Where we workLombok & West Nusa Tenggara\""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "section#services \"Web Development Packages, Clearly Scoped\"",
+   "msg": "the screen at scroll 1800px (stride 2) shows 395px of section 2 and the content of 2 sections, over 24px each beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "section#services \"Web Development Packages, Clearly Scoped\""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "section#portfolio \"Website & Web Application Concepts Three\"",
+   "msg": "the screen at scroll 2700px (stride 3) shows 384px of section 3 and the content of 2 sections, over 24px each beside section 4: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "section#portfolio \"Website & Web Application Concepts Three\""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "section#contact \"Free web development consultation for yo\"",
+   "msg": "the screen at scroll 8521px (the top of section 10) shows 330px of section 9 and the content of 2 sections, over 24px each beside section 10: a screen shows one section (another may peek 8px, 24px WARN) (and 9 more like it: scroll 3600px, scroll 3889px, scroll 6300px) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "section#contact \"Free web development consultation for yo\""
+   ]
+  },
+  {
+   "check": "one-heading",
+   "where": "footer.site-footer.home-footer > div.home-footer-inner > div.footer-column.footer-contact > h2 \"Contact\"",
+   "msg": "the section holds 2 h2 headings: one per section, first in its .wrap (SR-5)",
+   "fix": "give each section one h2, first in its .wrap, and the hero only its h1",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-heading"
+   ],
+   "wheres": [
+    "footer.site-footer.home-footer > div.home-footer-inner > div.footer-column.footer-contact > h2 \"Contact\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "section#process \"From the first brief to a site ready to \"",
+   "msg": "the content of section 7 runs 0px from the left and 0px from the right (read from its outermost blocks: no .wrap): the page's container starts at 92px; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+   "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "section#process \"From the first brief to a site ready to \""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "a.skip-link \"Skip to content\"",
+   "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "a.skip-link \"Skip to content\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "header.site-header \"Menu Services & pricing Business solutio\"",
+   "msg": "a <header> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "header.site-header \"Menu Services & pricing Business solutio\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "footer.site-footer.home-footer \"A web studio based in Lombok, serving bu\"",
+   "msg": "a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 10 more like it: \"A web studio in Lombok ·\", \"Web Development Packages\", \"Website & Web Applicatio\") (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "footer.site-footer.home-footer \"A web studio based in Lombok, serving bu\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "footer.site-footer.home-footer > div.home-footer-inner > div.footer-column.footer-contact > h2 \"Contact\"",
+   "msg": "the h2 starts 916px right of the container's left: every h1 and h2 starts on it, 2px either way (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "footer.site-footer.home-footer > div.home-footer-inner > div.footer-column.footer-contact > h2 \"Contact\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "main#content > section.mobile-app.section-shell > div.mobile-app-copy > h2 \"One connected experience across web and \"",
+   "msg": "the h2 starts 700px right of the container's left: every h1 and h2 starts on it, 2px either way (and 4 more like it: x 702, x 670, \"Explore\") (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "main#content > section.mobile-app.section-shell > div.mobile-app-copy > h2 \"One connected experience across web and \""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "section#home > figure.hero-visual > img.hero-main-photo \"Laptop displaying website code in a work\"",
+   "msg": "a <img> over half the container wide runs 692-1347px, not on the container's lines at 92-1348px (SR-6)",
+   "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "section#home > figure.hero-visual > img.hero-main-photo \"Laptop displaying website code in a work\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "section#faq > div.faq-list \"How long does website development take?A\"",
+   "msg": "a box over half the container wide runs 670-1348px, not on the container's lines at 92-1348px (and 1 more like it: \"Developers collaborating\") (SR-6)",
+   "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "section#faq > div.faq-list \"How long does website development take?A\""
+   ]
+  },
+  {
+   "check": "nav",
+   "where": "nav#site-nav > a:nth-of-type(1) \"Services & pricing\"",
+   "msg": "nav link wraps to a second line",
+   "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+   "widths": [
+    1152
+   ],
+   "from": "consistency",
+   "ids": [
+    "nav"
+   ],
+   "wheres": [
+    "nav#site-nav > a:nth-of-type(1) \"Services & pricing\""
+   ]
+  },
+  {
+   "check": "nav",
+   "where": "nav#site-nav > a:nth-of-type(2) \"Business solutions\"",
+   "msg": "nav link wraps to a second line",
+   "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+   "widths": [
+    1152
+   ],
+   "from": "consistency",
+   "ids": [
+    "nav"
+   ],
+   "wheres": [
+    "nav#site-nav > a:nth-of-type(2) \"Business solutions\""
+   ]
+  },
+  {
+   "check": "container",
+   "where": "page",
+   "msg": "no .wrap",
+   "fix": "put the content in one .wrap",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "container"
+   ],
+   "wheres": [
+    "page"
+   ]
+  }
+ ],
+ "waived": [],
+ "warnCount": 42,
+ "at": "2026-11-17T13:13:47.447Z",
+ "openTold": true
+}

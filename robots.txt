@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lombokdevlab.com/sitemap.xml
