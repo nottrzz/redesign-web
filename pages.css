@@ -790,7 +790,7 @@
 @media (max-width: 640px) {
   .site-nav:not(.is-open) .nav-cta {
     margin-left: 8px;
-    display: hidden;
+    display: none;
   }
 }
 
